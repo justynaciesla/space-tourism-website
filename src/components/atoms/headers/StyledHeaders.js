@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {devices} from '../../../devices/devices'
 
 export const StyledHeading1 = styled.h1`
 font-family: 'Bellefair', serif;
@@ -7,7 +8,11 @@ font-family: 'Bellefair', serif;
   color: ${({ color="#FFFFFF" }) => color};
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px"}) => margin};
-  padding: ${({padding= "0px"}) => padding}
+  padding: ${({padding= "0px"}) => padding};
+
+  @media ${devices.devices.tablet} {
+    font-size: 150px;
+  }
 `;
 
 export const StyledHeading2 = styled.h2`
@@ -51,8 +56,12 @@ font-size: ${({ fontSize = "28px" }) => fontSize};
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin= "0px" }) => margin};
   letter-spacing: ${({letterSpacing ="4.72px"}) => letterSpacing};
-  padding: ${({padding= "0px"}) => padding}
+  padding: ${({padding= "0px"}) => padding};
 
+  @media ${devices.devices.tablet} {
+    font-size: 20px;
+    letter-spacing: 3.38 px
+  }
 `;
 
 export const StyledSubheader1 = styled.p`

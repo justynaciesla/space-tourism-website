@@ -3,7 +3,7 @@ import {StyledButton} from './StyledExploreButton'
 
 const ExploreButton = () => {
   return (
-    <StyledButton>Explore</StyledButton>
+    <StyledButton>EXPLORE</StyledButton>
   )
 }
 

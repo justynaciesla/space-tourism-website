@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+import {devices} from './../../../devices/devices'
 
 export const StyledNavLink =styled(NavLink)`
     text-decoration: none;
@@ -20,6 +21,10 @@ export const StyledNavLink =styled(NavLink)`
     text-decoration-color: #979797; 
     text-decoration-thickness: 3px;
 };
+
+@media ${devices.devices.tablet} {
+      font-size: 14px;
+  }
 `
 export const StyledUl = styled.ul`
   width: 50%;
@@ -30,7 +35,7 @@ export const StyledUl = styled.ul`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255,255,255, 4%);
+  background-color: rgba(255,255,255, 5%);
 `;
 
 export const StyledLi = styled.li`
@@ -42,4 +47,10 @@ export const StyledLi = styled.li`
 `;
 
 export const StyledBold = styled.span`
-    font-weight: 1000`
+    font-weight: 1000;
+    
+    @media ${devices.devices.tablet} {
+    display: none;
+  }
+
+    `
