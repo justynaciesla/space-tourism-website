@@ -30,4 +30,15 @@ margin: 100px 0px 0px 0px;
 };
 }
 
+@media ${devices.devices.mobile} {
+    width: 150px;
+    height: 150px; 
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    
+    &:hover{
+        box-shadow: 0px 0px 0px 50px rgba(255,255,255, 10%);
+        border-radius: 50%;
+        cursor: pointer;
+};
 `

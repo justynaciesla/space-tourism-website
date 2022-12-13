@@ -11,6 +11,13 @@ width: 40%;
     align-items: center;
     justify-content:center;
 }
+
+@media ${devices.devices.mobile} {
+    width:80%;
+    align-items: center;
+    justify-content:center;
+    align-items: center;
+}
 `
 
 export const StyledP = styled.p`
@@ -23,6 +30,13 @@ line-height: 32px;
 @media ${devices.devices.tablet} {
     font-size: 16px;
     line-height: 28px;
+    width: 70%; 
+    text-align: center;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 15px;
+    line-height: 25px;
     width: 70%; 
     text-align: center;
   }

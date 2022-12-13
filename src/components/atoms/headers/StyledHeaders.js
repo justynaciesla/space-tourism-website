@@ -13,6 +13,10 @@ font-family: 'Bellefair', serif;
   @media ${devices.devices.tablet} {
     font-size: 150px;
   }
+
+  @media ${devices.devices.mobile} {
+    font-size: 80px;
+  }
 `;
 
 export const StyledHeading2 = styled.h2`
@@ -60,7 +64,12 @@ font-size: ${({ fontSize = "28px" }) => fontSize};
 
   @media ${devices.devices.tablet} {
     font-size: 20px;
-    letter-spacing: 3.38 px
+    letter-spacing: 3.38px;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 16px;
+    letter-spacing: 2.7px;
   }
 `;
 

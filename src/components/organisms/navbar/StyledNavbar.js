@@ -16,4 +16,9 @@ width: 100vw;
     margin-top: -10px;
   }
 
+  @media ${devices.devices.mobile} {
+    justify-content: space-between; 
+    margin-top: 20px;
+  }
+
 `;

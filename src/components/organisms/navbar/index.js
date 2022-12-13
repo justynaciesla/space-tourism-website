@@ -3,6 +3,7 @@ import Logo from "../../atoms/logo";
 import Line from '../../atoms/line/index';
 import NavbarMenu from "../../atoms/navbarMenu";
 import {StyledNavigationWrapper} from './StyledNavbar'
+import HamburgerMenuIcon from "../../atoms/hamburgerMenuIcon";
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
     <Logo />
     <Line />
     <NavbarMenu />
+    <HamburgerMenuIcon/>
    </StyledNavigationWrapper>
   )
 };

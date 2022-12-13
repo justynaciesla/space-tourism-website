@@ -36,14 +36,18 @@ export const StyledUl = styled.ul`
   justify-content: center;
   align-items: center;
   background-color: rgba(255,255,255, 5%);
+
+  @media ${devices.devices.mobile} {
+      display: none;
+  }
 `;
 
 export const StyledLi = styled.li`
     font-family: 'Barlow Condensed', sans-serif;
     margin: 0px 30px 0px 0px;
     font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
     letter-spacing:  2.7px;
+    white-space: nowrap;
 `;
 
 export const StyledBold = styled.span`
