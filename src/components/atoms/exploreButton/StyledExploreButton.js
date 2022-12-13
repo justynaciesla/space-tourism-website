@@ -1,7 +1,10 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+
 import {devices} from './../../../devices/devices'
 
-export const StyledButton = styled.button`
+export const StyledLink = styled(Link)`
+text-decoration:none;
 width: 275px;
 height:275px; 
 background-color:#FFFFFF;
@@ -12,6 +15,9 @@ font-size: 32px;
 letter-spacing: 2px;
 border:none;
 margin: 100px 0px 0px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
 
 &:hover{
     box-shadow: 0px 0px 0px 75px rgba(255,255,255, 10%);

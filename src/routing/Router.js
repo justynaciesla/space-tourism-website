@@ -7,8 +7,6 @@ import Destination from '../views/destination';
 import Crew from "../views/crew";
 import Technology from "../views/technology"
 
-
-
 const Router = () => {
   return (
     <BrowserRouter>

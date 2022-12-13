@@ -1,9 +1,10 @@
 import React from 'react'
-import {StyledButton} from './StyledExploreButton'
+import {StyledLink} from './StyledExploreButton'
 
 const ExploreButton = () => {
+
   return (
-    <StyledButton>EXPLORE</StyledButton>
+    <StyledLink to="/destination">EXPLORE</StyledLink>
   )
 }
 

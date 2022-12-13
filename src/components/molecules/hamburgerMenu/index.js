@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'; 
 import RootContext from '../../../context'
 import CloseIcon from '../../../assets/shared/icon-close.svg'
-import {StyledWrapper, StyledUl, StyledLi, StyledNavLink, StyledBold, StyledButton, StyledCloseIcon } from './StyledHamburgerMenu'
+import {StyledWrapper, StyledUl, StyledLi, StyledNavLink, StyledCloseIcon } from './StyledHamburgerMenu'
 
 const HamburgerMenu = () => {
 const {isHmburgerMenuOpen, toggleHamburgerMenu} = useContext(RootContext)
