@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-import {devices} from './../../../devices/devices'
+import { devices } from "./../../../devices/devices";
 
 export const StyledLink = styled(Link)`
 text-decoration:none;
@@ -47,4 +47,4 @@ justify-content: center;
         border-radius: 50%;
         cursor: pointer;
 };
-`
+`;

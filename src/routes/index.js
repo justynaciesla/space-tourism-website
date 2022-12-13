@@ -1,7 +1,6 @@
 export const routes = {
-    home: "/",
-    destination:"/destination",
-    crew:"/crew",
-    technology:"/technology"
-  };
-  
+  home: "/",
+  destination: "/destination",
+  crew: "/crew",
+  technology: "/technology",
+};

@@ -1,10 +1,8 @@
-import React from 'react'
-import {StyledLine} from './StyledLine'
+import React from "react";
+import { StyledLine } from "./StyledLine";
 
 const Line = () => {
-  return (
-    <StyledLine></StyledLine>
-  )
-}
+  return <StyledLine></StyledLine>;
+};
 
-export default Line; 
+export default Line;

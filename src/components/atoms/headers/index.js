@@ -8,7 +8,7 @@ import {
   StyledSubheader1,
   StyledSubheader2,
   StyledNavHeader,
-  StyledP
+  StyledP,
 } from "./StyledHeaders";
 
 const Header = ({
@@ -19,7 +19,7 @@ const Header = ({
   fontSize,
   textAlign,
   margin,
-  padding, 
+  padding,
   fontWeight,
   letterSpacing,
 }) => {
@@ -32,8 +32,7 @@ const Header = ({
         fontWeight={fontWeight}
         textAlign={textAlign}
         margin={margin}
-        padding={padding}
-      >
+        padding={padding}>
         {children}
       </StyledHeading1>
     ) : headerType === "h2" ? (
@@ -44,8 +43,7 @@ const Header = ({
         fontWeight={fontWeight}
         textAlign={textAlign}
         margin={margin}
-        padding={padding}
-      >
+        padding={padding}>
         {children}
       </StyledHeading2>
     ) : headerType === "h3" ? (
@@ -56,8 +54,7 @@ const Header = ({
         fontWeight={fontWeight}
         textAlign={textAlign}
         margin={margin}
-        padding={padding}
-      >
+        padding={padding}>
         {children}
       </StyledHeading3>
     ) : headerType === "h4" ? (
@@ -68,8 +65,7 @@ const Header = ({
         fontWeight={fontWeight}
         textAlign={textAlign}
         margin={margin}
-        padding={padding}
-      >
+        padding={padding}>
         {children}
       </StyledHeading4>
     ) : headerType === "h5" ? (
@@ -80,12 +76,11 @@ const Header = ({
         fontWeight={fontWeight}
         textAlign={textAlign}
         margin={margin}
-        letterSpacing = {letterSpacing}
-        padding={padding}
-      >
+        letterSpacing={letterSpacing}
+        padding={padding}>
         {children}
       </StyledHeading5>
-    ) :  headerType === "Subh1" ? (
+    ) : headerType === "Subh1" ? (
       <StyledSubheader1
         color={color}
         fontFamily={fontFamily}
@@ -94,48 +89,45 @@ const Header = ({
         textAlign={textAlign}
         margin={margin}
         letterSpacing={letterSpacing}
-        padding={padding}
-      >
+        padding={padding}>
         {children}
       </StyledSubheader1>
     ) : headerType === "Subh2" ? (
-        <StyledSubheader2
-          color={color}
-          fontFamily={fontFamily}
-          fontSize={fontSize}
-          fontWeight={fontWeight}
-          textAlign={textAlign}
-          margin={margin}
-          letterSpacing={letterSpacing}
-          padding={padding}
-        >
-          {children}
-        </StyledSubheader2>
-      ): headerType === "nav" ? (
-        <StyledNavHeader
-          color={color}
-          fontFamily={fontFamily}
-          fontSize={fontSize}
-          fontWeight={fontWeight}
-          textAlign={textAlign}
-          margin={margin}
-          letterSpacing={letterSpacing}
-          padding={padding}
-        >
-          {children}
-        </StyledNavHeader>
-      ) : ( <StyledP
-      color={color}
-      fontFamily={fontFamily}
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      textAlign={textAlign}
-      margin={margin}
-      letterSpacing={letterSpacing}
-      padding={padding}
-    >
-      {children}
-    </StyledP>
+      <StyledSubheader2
+        color={color}
+        fontFamily={fontFamily}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        textAlign={textAlign}
+        margin={margin}
+        letterSpacing={letterSpacing}
+        padding={padding}>
+        {children}
+      </StyledSubheader2>
+    ) : headerType === "nav" ? (
+      <StyledNavHeader
+        color={color}
+        fontFamily={fontFamily}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        textAlign={textAlign}
+        margin={margin}
+        letterSpacing={letterSpacing}
+        padding={padding}>
+        {children}
+      </StyledNavHeader>
+    ) : (
+      <StyledP
+        color={color}
+        fontFamily={fontFamily}
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        textAlign={textAlign}
+        margin={margin}
+        letterSpacing={letterSpacing}
+        padding={padding}>
+        {children}
+      </StyledP>
     );
 
   return <>{_renderHeader()}</>;

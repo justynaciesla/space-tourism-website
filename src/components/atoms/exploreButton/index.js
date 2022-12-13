@@ -1,11 +1,8 @@
-import React from 'react'
-import {StyledLink} from './StyledExploreButton'
+import React from "react";
+import { StyledLink } from "./StyledExploreButton";
 
 const ExploreButton = () => {
+  return <StyledLink to='/destination'>EXPLORE</StyledLink>;
+};
 
-  return (
-    <StyledLink to="/destination">EXPLORE</StyledLink>
-  )
-}
-
-export default ExploreButton
+export default ExploreButton;

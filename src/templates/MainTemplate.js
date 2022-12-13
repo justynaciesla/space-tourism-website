@@ -8,7 +8,6 @@ const MainTemplate = ({ children }) => {
       <HamburgerMenu />
       <Navbar />
       {children}
-   
     </>
   );
 };

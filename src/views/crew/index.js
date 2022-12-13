@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Crew = () => {
-  return (
-    <div>welcome from Crew</div>
-  )
-}
+  return <div>welcome from Crew</div>;
+};
 
-export default Crew
+export default Crew;
