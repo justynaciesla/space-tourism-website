@@ -6,6 +6,7 @@ import Home from "../views/home";
 import Destination from "../views/destination";
 import Crew from "../views/crew";
 import Technology from "../views/technology";
+import Planet from "../views/planet";
 
 const Router = () => {
   return (
@@ -13,7 +14,9 @@ const Router = () => {
       <MainTemplate>
         <Routes>
           <Route exact path={routes.home} element={<Home />} />
+          <Route path={routes.planetDestination} element={<Planet />} />
           <Route path={routes.destination} element={<Destination />} />
+
           <Route path={routes.crew} element={<Crew />} />
           <Route path={routes.technology} element={<Technology />} />
         </Routes>

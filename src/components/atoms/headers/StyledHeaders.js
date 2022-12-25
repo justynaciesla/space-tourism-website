@@ -113,4 +113,7 @@ export const StyledP = styled.p`
   margin: ${({ margin = "0px" }) => margin};
   letter-spacing: ${({ letterSpacing = "4.72 px" }) => letterSpacing};
   padding: ${({ padding = "0px" }) => padding};
+  line-height: 32px;
+  text-align: justify;
+  text-justify: inter-word;
 `;

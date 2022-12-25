@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import RootContext from "../../../context";
 import {
   StyledUl,
   StyledLi,
@@ -7,6 +8,12 @@ import {
 } from "./StyledNavbarMenu";
 
 const NavbarMenu = () => {
+  const { destinations } = useContext(RootContext);
+
+  let Moon = destinations.filter((destination) => {
+    return destination.name === "Moon";
+  });
+
   return (
     <StyledUl>
       <StyledLi>
@@ -15,7 +22,9 @@ const NavbarMenu = () => {
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
-        <StyledNavLink to='/destination'>
+        <StyledNavLink
+          to={`/destination/${Moon[0].name}`}
+          state={{ ...Moon[0] }}>
           <StyledBold>01</StyledBold> DESTINSTION
         </StyledNavLink>
       </StyledLi>

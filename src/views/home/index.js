@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <picture>
-        <source media={devices.devices.tablet} srcset={SpaceBackgroundTablet} />
-        <source media={devices.devices.mobile} srcset={SpaceBackgroundMobile} />
+        <source media={devices.devices.tablet} src={SpaceBackgroundTablet} />
+        <source media={devices.devices.mobile} src={SpaceBackgroundMobile} />
         <StyledBackground src={SpaceBackground} alt='bckground' />
       </picture>
       <HomeContent />
