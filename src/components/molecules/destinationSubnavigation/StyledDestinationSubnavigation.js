@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { devices } from "./../../../devices/devices";
 
 export const StyledUl = styled.ul`

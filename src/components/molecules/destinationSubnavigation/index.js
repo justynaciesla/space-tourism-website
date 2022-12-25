@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import RootContext from "./../../../context";
 import { StyledLink } from "./StyledDestinationSubnavigation";
-import { Link } from "react-router-dom";
 
 import { StyledUl, StyledLi } from "./StyledDestinationSubnavigation";
 
