@@ -29,12 +29,13 @@ export const StyledLi = styled.li`
 
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
-  color: white;
+  color: #d0d6f9;
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
 
   &.active {
+    color: white;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: #ffffff;

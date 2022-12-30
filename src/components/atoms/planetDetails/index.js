@@ -5,7 +5,9 @@ const PlanetDetails = ({ planetName, planetDescription }) => {
   return (
     <>
       <StyledHeading2>{planetName}</StyledHeading2>
-      <StyledP>{planetDescription}</StyledP>
+      <StyledP margin='0px 0px 20px 0px' color='#D0D6F9'>
+        {planetDescription}
+      </StyledP>
     </>
   );
 };

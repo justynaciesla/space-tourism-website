@@ -15,7 +15,9 @@ const Router = () => {
         <Routes>
           <Route exact path={routes.home} element={<Home />} />
           <Route path={routes.planetDestination} element={<Planet />} />
-          <Route path={routes.destination} element={<Destination />} />
+          {/* <Route path={routes.destination} element={<Destination />} /> */}
+
+          <Route path={routes.crewDetails} element={<Crew />} />
 
           <Route path={routes.crew} element={<Crew />} />
           <Route path={routes.technology} element={<Technology />} />

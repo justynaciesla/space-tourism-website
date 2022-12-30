@@ -37,6 +37,7 @@ export const StyledHeading3 = styled.h3`
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
+  white-space: ${({ whiteSpace = "nowrap" }) => whiteSpace};
 `;
 
 export const StyledHeading4 = styled.h4`
@@ -77,20 +78,19 @@ export const StyledSubheader1 = styled.p`
   color: ${({ color = "#FFFFFF" }) => color};
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
-  letter-spacing: ${({ letterSpacing }) => letterSpacing};
+  letter-spacing: ${({ letterSpacing = "2.35px" }) => letterSpacing};
   padding: ${({ padding = "0px" }) => padding};
 `;
 
 export const StyledSubheader2 = styled.p`
-font-family: 'Barlow Condensed', sans-serif; 
-font-size: ${({ fontSize = "14px" }) => fontSize};
-letter-spacing: ${({ letterSpacing = "2.35 px" }) => letterSpacing}
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: ${({ fontSize = "14px" }) => fontSize};
+  letter-spacing: ${({ letterSpacing = "2.35px" }) => letterSpacing};
   text-align: ${({ textAlign }) => textAlign};
   color: ${({ color = "#FFFFFF" }) => color};
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
-  padding: ${({ padding = "0px" }) => padding}
-
+  padding: ${({ padding = "0px" }) => padding};
 `;
 
 export const StyledNavHeader = styled.p`
@@ -116,4 +116,5 @@ export const StyledP = styled.p`
   line-height: 32px;
   text-align: justify;
   text-justify: inter-word;
+  width: ${({ width }) => width};
 `;

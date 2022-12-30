@@ -8,10 +8,14 @@ import {
 } from "./StyledNavbarMenu";
 
 const NavbarMenu = () => {
-  const { destinations } = useContext(RootContext);
+  const { destinations, crew } = useContext(RootContext);
 
   let Moon = destinations.filter((destination) => {
     return destination.name === "Moon";
+  });
+
+  let DouglasHurley = crew.filter((crew) => {
+    return crew.name === "Douglas Hurley";
   });
 
   return (
@@ -22,14 +26,14 @@ const NavbarMenu = () => {
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
-        <StyledNavLink
-          to={`/destination/${Moon[0].name}`}
-          state={{ ...Moon[0] }}>
+        <StyledNavLink to={`/destination/$[0].name}`} state={{ ...Moon[0] }}>
           <StyledBold>01</StyledBold> DESTINSTION
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
-        <StyledNavLink to='/crew'>
+        <StyledNavLink
+          to={`/crew/${DouglasHurley[0].name}`}
+          state={{ ...DouglasHurley[0] }}>
           <StyledBold>02</StyledBold> CREW
         </StyledNavLink>
       </StyledLi>

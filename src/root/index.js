@@ -6,6 +6,7 @@ import data from "../starter-code/data.json";
 const Root = () => {
   const [isHmburgerMenuOpen, setHamburgerMenuOpen] = useState("closed");
   const [destinations, setDestinations] = useState(data.destinations);
+  const [crew, setCrew] = useState(data.crew);
 
   const toggleHamburgerMenu = () => {
     isHmburgerMenuOpen === "closed"
@@ -18,6 +19,7 @@ const Root = () => {
       value={{
         isHmburgerMenuOpen,
         destinations,
+        crew,
         setHamburgerMenuOpen,
         toggleHamburgerMenu,
       }}>

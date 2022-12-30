@@ -22,6 +22,8 @@ const Header = ({
   padding,
   fontWeight,
   letterSpacing,
+  whiteSpace,
+  width,
 }) => {
   const _renderHeader = () =>
     headerType === "h1" ? (
@@ -125,7 +127,8 @@ const Header = ({
         textAlign={textAlign}
         margin={margin}
         letterSpacing={letterSpacing}
-        padding={padding}>
+        padding={padding}
+        width={width}>
         {children}
       </StyledP>
     );
