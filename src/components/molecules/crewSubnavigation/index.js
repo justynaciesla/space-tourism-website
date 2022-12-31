@@ -6,15 +6,13 @@ import { StyledUl, StyledLi, StyledBullet } from "./StyledCrewSubnavigation";
 const CrewSubnavigation = () => {
   const { crew } = useContext(RootContext);
 
-  console.log("from sub", crew);
-
   return (
     <StyledUl>
       {crew.map((member, index) => (
         <StyledLi key={index}>
-          <StyledLink
-            to={`/crew/${member.role}`}
-            state={{ ...member }}></StyledLink>
+          <StyledLink to={`/crew/${member.role}`} state={{ ...member }}>
+            <StyledBullet></StyledBullet>
+          </StyledLink>
         </StyledLi>
       ))}
     </StyledUl>

@@ -20,7 +20,9 @@ const Router = () => {
           <Route path={routes.crewDetails} element={<Crew />} />
 
           <Route path={routes.crew} element={<Crew />} />
+
           <Route path={routes.technology} element={<Technology />} />
+          <Route path={routes.technologyDetails} element={<Technology />} />
         </Routes>
       </MainTemplate>
     </BrowserRouter>

@@ -5,4 +5,5 @@ export const routes = {
   crew: "/crew",
   crewDetails: "/crew/:Name",
   technology: "/technology",
+  technologyDetails: "/technology/:Name",
 };

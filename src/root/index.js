@@ -7,6 +7,7 @@ const Root = () => {
   const [isHmburgerMenuOpen, setHamburgerMenuOpen] = useState("closed");
   const [destinations, setDestinations] = useState(data.destinations);
   const [crew, setCrew] = useState(data.crew);
+  const [technology, setTechnology] = useState(data.technology);
 
   const toggleHamburgerMenu = () => {
     isHmburgerMenuOpen === "closed"
@@ -20,6 +21,7 @@ const Root = () => {
         isHmburgerMenuOpen,
         destinations,
         crew,
+        technology,
         setHamburgerMenuOpen,
         toggleHamburgerMenu,
       }}>

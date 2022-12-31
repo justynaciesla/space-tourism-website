@@ -8,7 +8,7 @@ import {
 } from "./StyledNavbarMenu";
 
 const NavbarMenu = () => {
-  const { destinations, crew } = useContext(RootContext);
+  const { destinations, crew, technology } = useContext(RootContext);
 
   let Moon = destinations.filter((destination) => {
     return destination.name === "Moon";
@@ -16,6 +16,10 @@ const NavbarMenu = () => {
 
   let DouglasHurley = crew.filter((crew) => {
     return crew.name === "Douglas Hurley";
+  });
+
+  let LaunchVehicle = technology.filter((technology) => {
+    return technology.name === "Launch vehicle";
   });
 
   return (
@@ -38,7 +42,9 @@ const NavbarMenu = () => {
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
-        <StyledNavLink to='/technology'>
+        <StyledNavLink
+          to={`/technology/${LaunchVehicle[0].name}`}
+          state={{ ...LaunchVehicle[0] }}>
           <StyledBold>03</StyledBold> TECHNOLOGY
         </StyledNavLink>
       </StyledLi>
