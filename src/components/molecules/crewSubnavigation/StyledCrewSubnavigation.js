@@ -17,7 +17,7 @@ export const StyledUl = styled.ul`
   }
 `;
 
-export const StyledLi = styled.li`
+export const StyledLink = styled(NavLink)`
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -32,28 +32,4 @@ export const StyledLi = styled.li`
     background-color: white;
     background-color: white;
   }
-`;
-
-export const StyledLink = styled(NavLink)`
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #979797;
-  cursor: pointer;
-  background-color: #979797;
-
-  &:active {
-    background-color: white;
-    background-color: white;
-  }
-  &:hover {
-    background-color: white;
-  }
-`;
-
-export const StyledBullet = styled.div`
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #979797;
 `;

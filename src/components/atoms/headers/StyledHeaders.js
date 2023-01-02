@@ -27,6 +27,10 @@ export const StyledHeading2 = styled.h2`
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
+
+  @media ${devices.devices.tablet} {
+    font-size: 80px;
+  }
 `;
 
 export const StyledHeading3 = styled.h3`
@@ -117,4 +121,9 @@ export const StyledP = styled.p`
   text-align: justify;
   text-justify: inter-word;
   width: ${({ width }) => width};
+
+  @media ${devices.devices.tablet} {
+    font-size: 16px;
+    line-height: 28px;
+  }
 `;

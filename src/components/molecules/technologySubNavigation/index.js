@@ -15,13 +15,11 @@ const TechnologySubnavigation = () => {
   return (
     <StyledUl>
       {technology.map((item, index) => (
-        <StyledLi key={index}>
-          <StyledDiv>
-            <StyledLink to={`/technology/${item.name}`} state={{ ...item }}>
-              {index + 1}
-            </StyledLink>
-          </StyledDiv>
-        </StyledLi>
+        <StyledLink
+          to={`/technology/${item.name.replace(/\s/g, "")}`}
+          state={{ ...item }}>
+          {index + 1}
+        </StyledLink>
       ))}
     </StyledUl>
   );

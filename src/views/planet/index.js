@@ -15,6 +15,7 @@ import DestinationContent from "../../components/organisms/destinationContent";
 import DestinationSubnavigation from "../../components/molecules/destinationSubnavigation";
 import PlanetAdditionalInfo from "../../components/molecules/planetAdditionalInfo";
 import PlanetDetails from "../../components/atoms/planetDetails";
+import DestinationTitle from "../../components/atoms/destinationTitle";
 
 const Planet = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ const Planet = () => {
         <StyledBackground src={DestinationDesktop} alt='background' />
       </picture>
 
-      <DestinationContent />
+      <DestinationTitle />
       <StyledWrapper>
         <StyledImg src={location.state.images.png.slice(1)} alt='' />
         <StyledContentWrapper>

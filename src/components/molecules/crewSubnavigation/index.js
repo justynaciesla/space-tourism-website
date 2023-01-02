@@ -9,11 +9,9 @@ const CrewSubnavigation = () => {
   return (
     <StyledUl>
       {crew.map((member, index) => (
-        <StyledLi key={index}>
-          <StyledLink to={`/crew/${member.role}`} state={{ ...member }}>
-            <StyledBullet></StyledBullet>
-          </StyledLink>
-        </StyledLi>
+        <StyledLink
+          to={`/crew/${member.role.replace(/\s/g, "")}`}
+          state={{ ...member }}></StyledLink>
       ))}
     </StyledUl>
   );

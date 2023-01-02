@@ -13,7 +13,7 @@ const DestinationSubnavigation = () => {
       {destinations.map((destination, index) => (
         <StyledLi key={index}>
           <StyledLink
-            to={`/destination/${destination.name}`}
+            to={`/destination/${destination.name.replace(/\s/g, "")}`}
             state={{ ...destination }}>
             {destination.name.toUpperCase()}
           </StyledLink>

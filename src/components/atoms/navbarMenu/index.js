@@ -30,20 +30,22 @@ const NavbarMenu = () => {
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
-        <StyledNavLink to={`/destination/$[0].name}`} state={{ ...Moon[0] }}>
+        <StyledNavLink
+          to={`/destination/${Moon[0].name}`}
+          state={{ ...Moon[0] }}>
           <StyledBold>01</StyledBold> DESTINSTION
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
         <StyledNavLink
-          to={`/crew/${DouglasHurley[0].name}`}
+          to={`/crew/${DouglasHurley[0].role.replace(/\s/g, "")}`}
           state={{ ...DouglasHurley[0] }}>
           <StyledBold>02</StyledBold> CREW
         </StyledNavLink>
       </StyledLi>
       <StyledLi>
         <StyledNavLink
-          to={`/technology/${LaunchVehicle[0].name}`}
+          to={`/technology/${LaunchVehicle[0].name.replace(/\s/g, "")}`}
           state={{ ...LaunchVehicle[0] }}>
           <StyledBold>03</StyledBold> TECHNOLOGY
         </StyledNavLink>
