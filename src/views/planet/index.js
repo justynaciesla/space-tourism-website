@@ -11,7 +11,6 @@ import {
   StyledContentWrapper,
   StyledLine,
 } from "./StyledPlanet";
-import DestinationContent from "../../components/organisms/destinationContent";
 import DestinationSubnavigation from "../../components/molecules/destinationSubnavigation";
 import PlanetAdditionalInfo from "../../components/molecules/planetAdditionalInfo";
 import PlanetDetails from "../../components/atoms/planetDetails";

@@ -31,6 +31,10 @@ export const StyledHeading2 = styled.h2`
   @media ${devices.devices.tablet} {
     font-size: 80px;
   }
+
+  @media ${devices.devices.mobile} {
+    font-size: 56px;
+  }
 `;
 
 export const StyledHeading3 = styled.h3`
@@ -125,5 +129,10 @@ export const StyledP = styled.p`
   @media ${devices.devices.tablet} {
     font-size: 16px;
     line-height: 28px;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 15px;
+    line-height: 25px;
   }
 `;

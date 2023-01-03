@@ -14,9 +14,6 @@ export const StyledUl = styled.ul`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  @media ${devices.devices.mobile} {
-    display: none;
-  }
 `;
 
 export const StyledLi = styled.li`
@@ -46,5 +43,9 @@ export const StyledLink = styled(NavLink)`
     text-underline-offset: 10px;
     text-decoration-color: #979797;
     text-decoration-thickness: 3px;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 14px;
   }
 `;

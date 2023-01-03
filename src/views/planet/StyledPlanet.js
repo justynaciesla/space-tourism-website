@@ -36,6 +36,12 @@ export const StyledImg = styled.img`
     width: 300px;
     margin: 0px 0px 80px 0px;
   }
+
+  @media ${devices.devices.mobile} {
+    height: 170px;
+    width: 170px;
+    margin: 0px 0px 80px 0px;
+  }
 `;
 
 export const StyledContentWrapper = styled.div`
@@ -43,6 +49,11 @@ export const StyledContentWrapper = styled.div`
   flex-direction: column;
   width: 445px;
   @media ${devices.devices.tablet} {
+    align-items: center;
+    width: 100%;
+  }
+
+  @media ${devices.devices.mobile} {
     align-items: center;
     width: 100%;
   }
