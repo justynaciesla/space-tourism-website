@@ -20,12 +20,6 @@ export const StyledContentWrapper = styled.div`
   justify-content: space-around;
 `;
 
-export const StyledWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-`;
-
 export const StyledImg = styled.img`
   width: 415px;
   height: 427px;

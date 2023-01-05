@@ -46,6 +46,14 @@ export const StyledHeading3 = styled.h3`
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
   white-space: ${({ whiteSpace = "nowrap" }) => whiteSpace};
+
+  @media ${devices.devices.tablet} {
+    font-size: 40px;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 24px;
+  }
 `;
 
 export const StyledHeading4 = styled.h4`
@@ -56,6 +64,14 @@ export const StyledHeading4 = styled.h4`
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
+
+  @media ${devices.devices.tablet} {
+    font-size: 24px;
+  }
+
+  @media ${devices.devices.mobile} {
+    font-size: 16px;
+  }
 `;
 
 export const StyledHeading5 = styled.h5`

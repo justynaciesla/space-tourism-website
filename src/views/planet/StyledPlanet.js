@@ -25,6 +25,13 @@ export const StyledWrapper = styled.div`
     align-items: center;
     top: 23%;
   }
+
+  @media ${devices.devices.mobile} {
+    flex-direction: column;
+    align-items: center;
+    top: 23%;
+    left: 5%;
+  }
 `;
 
 export const StyledImg = styled.img`

@@ -4,21 +4,12 @@ import { devices } from "./../../devices/devices";
 import CrewDesktop from "../../assets/crew/background-crew-desktop.jpg";
 import CrewTablet from "../../assets/crew/background-crew-tablet.jpg";
 import CrewMobile from "../../assets/crew/background-crew-mobile.jpg";
-
-import {
-  StyledBackground,
-  StyledContentWrapper,
-  StyledWrapper,
-  StyledImg,
-} from "./StyledCrew.js";
-
+import { StyledBackground, StyledWrapper, StyledImg } from "./StyledCrew.js";
 import CrewTitle from "../../components/atoms/crewTitle";
-import Header from "../../components/atoms/headers/index";
-import CrewSubnavigation from "../../components/molecules/crewSubnavigation";
+import CrewContent from "../../components/organisms/crewContent";
 
-const Planet = () => {
+const Crew = () => {
   const location = useLocation();
-  console.log(location);
 
   return (
     <>
@@ -30,28 +21,15 @@ const Planet = () => {
 
       <CrewTitle />
       <StyledWrapper>
-        <StyledContentWrapper>
-          <div>
-            <Header headerType='h4' color='#979797'>
-              {location.state.role.toUpperCase()}
-            </Header>
-            <Header
-              headerType='h3'
-              margin='10px 0px 30px 0px'
-              whiteSpace='nowrap'>
-              {location.state.name.toUpperCase()}
-            </Header>
-            <Header color='#D0D6F9' width='90%'>
-              {location.state.bio}
-            </Header>
-          </div>
-          <CrewSubnavigation />
-        </StyledContentWrapper>
-
+        <CrewContent
+          role={location.state.role.toUpperCase()}
+          name={location.state.name.toUpperCase()}
+          description={location.state.bio}
+        />
         <StyledImg src={location.state.images.png.slice(1)} alt=''></StyledImg>
       </StyledWrapper>
     </>
   );
 };
 
-export default Planet;
+export default Crew;

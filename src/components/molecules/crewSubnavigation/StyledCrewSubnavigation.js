@@ -4,7 +4,6 @@ import { devices } from "./../../../devices/devices";
 
 export const StyledUl = styled.ul`
   position: fixed;
-  bottom: 80px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -12,8 +11,10 @@ export const StyledUl = styled.ul`
   justify-content: center;
   align-items: center;
   padding: 0px;
-  @media ${devices.devices.mobile} {
-    display: none;
+
+  @media ${devices.devices.tablet} {
+    position: absolute;
+    margin: 0px 0px -50px 0px;
   }
 `;
 

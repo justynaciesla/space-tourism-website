@@ -10,8 +10,8 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
   margin: 50px 0px 0px 0px;
+
   @media ${devices.devices.tablet} {
     margin: -50px 0px 0px 0px;
   }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../devices/devices";
 
 export const StyledBackground = styled.img`
   height: 100vh;
@@ -18,6 +19,22 @@ export const StyledWrapper = styled.div`
   justify-content: space-between;
   top: 43%;
   left: 10%;
+
+  @media ${devices.devices.tablet} {
+    top: 25%;
+    flex-direction: column;
+    width: 100%;
+    left: 10%;
+    align-items: center;
+  }
+
+  @media ${devices.devices.mobile} {
+    top: 50%;
+    flex-direction: column;
+    width: 100%;
+    left: 10%;
+    align-items: center;
+  }
 `;
 
 export const StyledImg = styled.img`
@@ -26,18 +43,17 @@ export const StyledImg = styled.img`
   left: 50%;
   height: 70%;
   width: auto;
-`;
 
-export const StyledContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 500px;
-`;
+  @media ${devices.devices.tablet} {
+    height: 40%;
+    width: auto;
+    left: 25%;
+  }
 
-export const StyledLine = styled.div`
-  height: 1px;
-  background: #979797;
-  width: 444px;
-  margin: 20px 0px 20px 0px;
+  @media ${devices.devices.mobile} {
+    height: 220px;
+    width: auto;
+    top: 10%;
+    left: 10%;
+  }
 `;
