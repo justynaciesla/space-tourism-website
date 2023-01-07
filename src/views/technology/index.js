@@ -33,9 +33,18 @@ const Technology = () => {
           name={location.state.name.toUpperCase()}
           description={location.state.description}
         />
-        <StyledImg
-          src={location.state.images.portrait.slice(1)}
-          alt=''></StyledImg>
+
+        <picture>
+          <source
+            media={devices.devices.tablet}
+            src={location.state.images.landscape.slice(1)}
+          />
+          <source
+            media={devices.devices.mobile}
+            src={location.state.images.landscape.slice(1)}
+          />
+          <StyledImg src={location.state.images.portrait.slice(1)} alt='' />
+        </picture>
       </StyledContentWrapper>
     </>
   );

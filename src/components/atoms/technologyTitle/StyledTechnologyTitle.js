@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../devices/devices";
 
 export const StyledWrapper = styled.div`
   position: absolute;
@@ -11,4 +12,8 @@ export const StyledWrapper = styled.div`
   flex-wrap: nowrap;
 
   margin: 50px 0px 0px 0px;
+
+  @media ${devices.devices.tablet} {
+    top: 10%;
+  }
 `;

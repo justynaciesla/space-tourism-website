@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../devices/devices";
 
 export const StyledBackground = styled.img`
   height: 100vh;
@@ -18,9 +19,23 @@ export const StyledContentWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  @media ${devices.devices.tablet} {
+    flex-direction: column;
+    align-items: center;
+    left: 0%;
+  }
 `;
 
 export const StyledImg = styled.img`
   width: 415px;
   height: 427px;
+
+  @media ${devices.devices.tablet} {
+    width: 100vw;
+    height: 310px;
+
+    order: 1;
+    margin: -50px 0px 0px -20px;
+  }
 `;
