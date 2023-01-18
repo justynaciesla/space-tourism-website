@@ -14,7 +14,7 @@ export const StyledBackground = styled.img`
 export const StyledContentWrapper = styled.div`
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 15%;
   display: flex;
   flex-direction: row;
   align-items: center;

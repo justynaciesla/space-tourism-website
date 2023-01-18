@@ -5,7 +5,7 @@ import { devices } from "./../../../devices/devices";
 export const StyledUl = styled.ul`
   position: absolute;
   top: 40%;
-  left: 10%;
+  left: 5%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -16,10 +16,12 @@ export const StyledUl = styled.ul`
   @media ${devices.devices.mobile} {
     flex-direction: row;
     padding-top: 50px;
+    z-index: 4;
   }
 
   @media ${devices.devices.tablet} {
     flex-direction: row;
+    z-index: 4;
   }
 `;
 

@@ -40,7 +40,7 @@ export const StyledWrapper = styled.div`
 export const StyledImg = styled.img`
   position: fixed;
   bottom: 0px;
-  left: 50%;
+  left: 60%;
   height: 70%;
   width: auto;
 
