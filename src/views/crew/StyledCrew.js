@@ -53,7 +53,7 @@ export const StyledImg = styled.img`
   @media ${devices.devices.mobile} {
     height: 220px;
     width: auto;
-    top: 10%;
-    left: 10%;
+    top: 8%;
+    left: 15%;
   }
 `;

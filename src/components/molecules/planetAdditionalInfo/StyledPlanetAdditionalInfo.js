@@ -6,8 +6,13 @@ export const StyledWrapperMoreInfo = styled.div`
   flex-direction: row;
   justify-content: flex-start;
 
+  @media ${devices.devices.tablet} {
+    gap: 50px;
+  }
+
   @media ${devices.devices.mobile} {
     flex-direction: column;
+    gap: 50px;
   }
 `;
 

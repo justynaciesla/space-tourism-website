@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import RootContext from "./../../../context";
 import { StyledLink } from "./StyledCrewSubnavigation";
-import { StyledUl, StyledLi, StyledBullet } from "./StyledCrewSubnavigation";
+import { StyledUl } from "./StyledCrewSubnavigation";
 
 const CrewSubnavigation = () => {
   const { crew } = useContext(RootContext);

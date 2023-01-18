@@ -15,6 +15,8 @@ export const StyledUl = styled.ul`
   @media ${devices.devices.tablet} {
     position: absolute;
     margin: 0px 0px -50px 0px;
+
+    left: 30%;
   }
 `;
 

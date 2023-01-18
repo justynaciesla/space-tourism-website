@@ -7,8 +7,8 @@ export const StyledWrapper = styled.div`
   width: 30%;
 
   @media ${devices.devices.tablet} {
-    width: 90%;
-    margin: 140px 0px 0px 0px;
+    width: 80%;
+    margin: 160px 0px 0px 0px;
     align-items: center;
     order: 2;
   }

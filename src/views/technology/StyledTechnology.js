@@ -34,8 +34,15 @@ export const StyledImg = styled.img`
   @media ${devices.devices.tablet} {
     width: 100vw;
     height: 310px;
-
     order: 1;
     margin: -50px 0px 0px -20px;
+    object-fit: cover;
+  }
+
+  @media ${devices.devices.mobile} {
+    width: 100vw;
+    height: 150px;
+    order: 1;
+    margin: -50px 0px 0px 0px;
   }
 `;

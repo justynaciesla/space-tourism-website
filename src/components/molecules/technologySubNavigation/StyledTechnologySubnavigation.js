@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { devices } from "./../../../devices/devices";
 
 export const StyledUl = styled.ul`
@@ -13,10 +13,13 @@ export const StyledUl = styled.ul`
   justify-content: center;
   align-items: center;
 
+  @media ${devices.devices.mobile} {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
   @media ${devices.devices.tablet} {
     flex-direction: row;
-    top: 70%;
-    left: 30%;
   }
 `;
 
@@ -49,15 +52,12 @@ export const StyledLink = styled(NavLink)`
     height: 60px;
     font-size: 24px;
     line-height: 60px;
-    cursor: pointer;
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-    &.active {
-      background-color: white;
-      color: black;
-    }
+  }
+  @media ${devices.devices.mobile} {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
   }
 `;
 
@@ -83,13 +83,16 @@ export const StyledDiv = styled.button`
   }
 
   @media ${devices.devices.tablet} {
-    cursor: pointer;
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-    &.active {
-      background-color: white;
-    }
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+  }
+
+  @media ${devices.devices.mobile} {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
   }
 `;
