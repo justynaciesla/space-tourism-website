@@ -14,7 +14,7 @@ export const StyledWrapper = styled.div`
         transition: margin 0.5s;
         position: absolute;
         height: 100vh;
-        z-index: 1;
+        z-index: 5;
         margin: ${({ visibility }) =>
           (visibility === "closed" && "0px -500px 0px 500px") ||
           (visibility === "opened" && "0px 0px 0px 30vw")};
