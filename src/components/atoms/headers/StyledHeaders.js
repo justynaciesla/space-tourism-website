@@ -1,5 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { devices } from "../../../devices/devices";
+
+const entryAnimation = keyframes`
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+`;
+
+const planetNameAnimation = keyframes`
+ 0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const StyledHeading1 = styled.h1`
   font-family: "Bellefair", serif;
@@ -9,6 +31,8 @@ export const StyledHeading1 = styled.h1`
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
+  animation-name: ${entryAnimation};
+  animation-duration: 2s;
 
   @media ${devices.devices.tablet} {
     font-size: 150px;
@@ -27,6 +51,8 @@ export const StyledHeading2 = styled.h2`
   font-weight: ${({ fontWeight = "500" }) => fontWeight};
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
+  animation-name: ${planetNameAnimation};
+  animation-duration: 2s;
 
   @media ${devices.devices.tablet} {
     font-size: 80px;
@@ -46,6 +72,8 @@ export const StyledHeading3 = styled.h3`
   margin: ${({ margin = "0px" }) => margin};
   padding: ${({ padding = "0px" }) => padding};
   white-space: ${({ whiteSpace = "nowrap" }) => whiteSpace};
+  animation-name: ${planetNameAnimation};
+  animation-duration: 2s;
 
   @media ${devices.devices.tablet} {
     font-size: 40px;

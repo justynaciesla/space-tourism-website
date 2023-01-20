@@ -14,12 +14,14 @@ export const StyledNavLink = styled(NavLink)`
     text-underline-offset: 38px;
     text-decoration-color: #ffffff;
     text-decoration-thickness: 3px;
+    transition: opacity 1s ease-in-out;
   }
   &:hover {
     text-decoration: underline;
     text-underline-offset: 38px;
     text-decoration-color: #979797;
     text-decoration-thickness: 3px;
+    transition: opacity 1s ease-in-out;
   }
 
   @media ${devices.devices.tablet} {
@@ -36,6 +38,7 @@ export const StyledUl = styled.ul`
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 5%);
+  backdrop-filter: blur(2rem);
 
   @media ${devices.devices.mobile} {
     display: none;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { devices } from "../../devices/devices";
 
 export const StyledBackground = styled.img`
@@ -27,9 +27,20 @@ export const StyledContentWrapper = styled.div`
   }
 `;
 
+const imgAnimation = keyframes`
+ 0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 export const StyledImg = styled.img`
   width: 415px;
   height: 427px;
+  animation-name: ${imgAnimation};
+  animation-duration: 3s;
 
   @media ${devices.devices.tablet} {
     width: 100vw;

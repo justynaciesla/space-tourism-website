@@ -13,15 +13,19 @@ export const StyledUl = styled.ul`
   justify-content: center;
   align-items: center;
 
+  @media ${devices.devices.tablet} {
+    flex-direction: row;
+    z-index: 4;
+    top: 55%;
+    left: 30%;
+  }
+
   @media ${devices.devices.mobile} {
     flex-direction: row;
     padding-top: 50px;
     z-index: 4;
-  }
-
-  @media ${devices.devices.tablet} {
-    flex-direction: row;
-    z-index: 4;
+    top: 40%;
+    left: 20%;
   }
 `;
 

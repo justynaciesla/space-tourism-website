@@ -8,7 +8,6 @@ export const StyledContentWrapper = styled.div`
   width: 500px;
 
   @media ${devices.devices.tablet} {
-    align-items: center;
     justify-content: flex-end;
     width: 80%;
   }
@@ -17,5 +16,16 @@ export const StyledContentWrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     width: 80%;
+  }
+`;
+
+export const StyledWrapper = styled.div`
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  @media ${devices.devices.tablet} {
+    order: 1;
+    align-items: center;
+    justify-content: center;
   }
 `;

@@ -18,6 +18,8 @@ margin: 100px 0px 0px 0px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: ease-in-out;
+transition-duration: 0.3s;
 
 &:hover{
     box-shadow: 0px 0px 0px 75px rgba(255,255,255, 10%);
@@ -33,6 +35,8 @@ justify-content: center;
         box-shadow: 0px 0px 0px 50px rgba(255,255,255, 10%);
         border-radius: 50%;
         cursor: pointer;
+       
+};
 };
 }
 
@@ -46,5 +50,7 @@ justify-content: center;
         box-shadow: 0px 0px 0px 50px rgba(255,255,255, 10%);
         border-radius: 50%;
         cursor: pointer;
+      
+};
 };
 `;

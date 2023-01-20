@@ -20,7 +20,7 @@ const Crew = () => {
       </picture>
 
       <CrewTitle />
-      <StyledWrapper>
+      <StyledWrapper key={location.key}>
         <CrewContent
           role={location.state.role.toUpperCase()}
           name={location.state.name.toUpperCase()}

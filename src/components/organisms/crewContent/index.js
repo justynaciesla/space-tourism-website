@@ -1,12 +1,13 @@
 import React from "react";
-import { StyledContentWrapper } from "./StyledCrewContent.js";
+import { StyledContentWrapper, StyledWrapper } from "./StyledCrewContent.js";
 import Header from "../../atoms/headers/index";
 import CrewSubnavigation from "../../molecules/crewSubnavigation";
 
 const CrewContent = ({ role, name, description }) => {
   return (
     <StyledContentWrapper>
-      <div style={{ margin: "50px 0px 0px 0px" }}>
+      <CrewSubnavigation />
+      <StyledWrapper>
         <Header headerType='h4' color='#979797'>
           {role}
         </Header>
@@ -16,8 +17,7 @@ const CrewContent = ({ role, name, description }) => {
         <Header color='#D0D6F9' width='90%'>
           {description}
         </Header>
-      </div>
-      <CrewSubnavigation />
+      </StyledWrapper>
     </StyledContentWrapper>
   );
 };

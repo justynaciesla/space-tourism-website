@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { devices } from "./../../devices/devices";
 
 export const StyledBackground = styled.img`
@@ -18,7 +18,7 @@ export const StyledWrapper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   top: 43%;
-  left: 12%;
+  left: 5%;
 
   @media ${devices.devices.tablet} {
     flex-direction: column;
@@ -34,9 +34,20 @@ export const StyledWrapper = styled.div`
   }
 `;
 
+const planetAnimation = keyframes`
+ 0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 export const StyledImg = styled.img`
   height: 350px;
   width: 350px;
+  animation-name: ${planetAnimation};
+  animation-duration: 3s;
 
   @media ${devices.devices.tablet} {
     height: 300px;

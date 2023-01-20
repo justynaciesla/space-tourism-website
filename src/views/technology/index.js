@@ -28,7 +28,7 @@ const Technology = () => {
       <TechnologyTitle />
       <TechnologySubnavigation />
 
-      <StyledContentWrapper>
+      <StyledContentWrapper key={location.key}>
         <TechnologyContent
           name={location.state.name.toUpperCase()}
           description={location.state.description}

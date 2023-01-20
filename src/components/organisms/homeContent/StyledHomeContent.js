@@ -13,7 +13,6 @@ export const StyledWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   align-content: flex-end;
-  margin: 50px 0px 0px 0px;
 
   @media ${devices.devices.tablet} {
     flex-direction: column;

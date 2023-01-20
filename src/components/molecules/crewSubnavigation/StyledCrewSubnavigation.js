@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { devices } from "./../../../devices/devices";
 
 export const StyledUl = styled.ul`
-  position: fixed;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -15,8 +14,7 @@ export const StyledUl = styled.ul`
   @media ${devices.devices.tablet} {
     position: absolute;
     margin: 0px 0px -50px 0px;
-
-    left: 30%;
+    order: 2;
   }
 `;
 

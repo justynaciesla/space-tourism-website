@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { devices } from "../../devices/devices";
 
 export const StyledBackground = styled.img`
@@ -14,46 +14,44 @@ export const StyledBackground = styled.img`
 export const StyledWrapper = styled.div`
   position: absolute;
   display: flex;
-  width: 70%;
+  width: 90%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   top: 43%;
-  left: 10%;
 
   @media ${devices.devices.tablet} {
     top: 25%;
     flex-direction: column;
-    width: 100%;
-    left: 10%;
     align-items: center;
   }
 
   @media ${devices.devices.mobile} {
-    top: 50%;
     flex-direction: column;
-    width: 100%;
-    left: 10%;
     align-items: center;
   }
 `;
 
-export const StyledImg = styled.img`
-  position: fixed;
-  bottom: 0px;
-  left: 60%;
-  height: 70%;
-  width: auto;
+const crewAnimation = keyframes`
+ 0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
+export const StyledImg = styled.img`
+  margin: -100px 0px 0px 0px;
+  animation-name: ${crewAnimation};
+  animation-duration: 3s;
   @media ${devices.devices.tablet} {
     height: 40%;
     width: auto;
-    left: 25%;
+    margin: 30px 0px 0px 0px;
   }
 
   @media ${devices.devices.mobile} {
     height: 220px;
     width: auto;
-    top: 8%;
-    left: 15%;
   }
 `;

@@ -28,7 +28,7 @@ const Planet = () => {
       </picture>
 
       <DestinationTitle />
-      <StyledWrapper>
+      <StyledWrapper key={location.key}>
         <StyledImg src={location.state.images.png.slice(1)} alt='' />
         <StyledContentWrapper>
           <DestinationSubnavigation />
