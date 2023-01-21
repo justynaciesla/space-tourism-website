@@ -8,6 +8,7 @@ export const StyledWrapperMoreInfo = styled.div`
 
   @media ${devices.devices.mobile} {
     flex-direction: column;
+    gap: 15px;
   }
 `;
 
