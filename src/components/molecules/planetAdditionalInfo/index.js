@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  StyledSubheader1,
-  StyledSubheader2,
-} from "../../atoms/headers/StyledHeaders.js";
+import Header from "./../../atoms/headers";
 import {
   StyledAdditionalInfoWrapper,
   StyledWrapperMoreInfo,
@@ -12,16 +9,16 @@ const PlanetAdditionalInfo = ({ distance, travel }) => {
   return (
     <StyledWrapperMoreInfo>
       <StyledAdditionalInfoWrapper>
-        <StyledSubheader2 margin='0px 0px 10px 0px' color='#D0D6F9'>
+        <Header headerType='Subh2' margin='0px 0px 10px 0px' color='#D0D6F9'>
           AVG.DISTACE
-        </StyledSubheader2>
-        <StyledSubheader1>{distance}</StyledSubheader1>
+        </Header>
+        <Header headerType='Subh1'>{distance}</Header>
       </StyledAdditionalInfoWrapper>
       <StyledAdditionalInfoWrapper>
-        <StyledSubheader2 margin='0px 0px 10px 0px' color='#D0D6F9'>
+        <Header headerType='Subh2' margin='0px 0px 10px 0px' color='#D0D6F9'>
           EST. TRAVEL TIME
-        </StyledSubheader2>
-        <StyledSubheader1>{travel}</StyledSubheader1>
+        </Header>
+        <Header headerType='Subh1'>{travel}</Header>
       </StyledAdditionalInfoWrapper>
     </StyledWrapperMoreInfo>
   );

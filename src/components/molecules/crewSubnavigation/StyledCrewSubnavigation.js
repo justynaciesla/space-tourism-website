@@ -13,7 +13,13 @@ export const StyledUl = styled.ul`
 
   @media ${devices.devices.tablet} {
     position: absolute;
-    margin: 0px 0px -50px 0px;
+    margin: 250px 0px -50px 200px;
+    order: 2;
+  }
+
+  @media ${devices.devices.mobile} {
+    position: absolute;
+    margin: -20px 0px 0px 0px;
     order: 2;
   }
 `;

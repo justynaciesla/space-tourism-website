@@ -13,10 +13,10 @@ export const StyledWrapper = styled.div`
   margin: 50px 0px 0px 0px;
 
   @media ${devices.devices.tablet} {
-    margin: -50px 0px 0px 0px;
+    margin: -100px 0px 0px 0px;
   }
 
   @media ${devices.devices.mobile} {
-    margin: -100px 0px 0px 0px;
+    margin: -80px 0px 0px 0px;
   }
 `;

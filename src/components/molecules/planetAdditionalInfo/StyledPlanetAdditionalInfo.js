@@ -19,6 +19,5 @@ export const StyledAdditionalInfoWrapper = styled.div`
 
   @media ${devices.devices.tablet} {
     align-items: center;
-    margin: 0px 0px 40px 0px;
   }
 `;

@@ -12,10 +12,12 @@ export const StyledContentWrapper = styled.div`
     width: 80%;
   }
 
-  @media ${devices.devices.tablet} {
+  @media ${devices.devices.mobile} {
     align-items: center;
     justify-content: flex-start;
     width: 80%;
+    order: 2;
+    margin: 50px 0px 0px 0px;
   }
 `;
 

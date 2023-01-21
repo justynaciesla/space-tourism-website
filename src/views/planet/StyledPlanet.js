@@ -14,7 +14,7 @@ export const StyledBackground = styled.img`
 export const StyledWrapper = styled.div`
   position: absolute;
   display: flex;
-  width: 80%;
+  width: 90%;
   flex-direction: row;
   justify-content: space-around;
   top: 43%;
@@ -58,7 +58,7 @@ export const StyledImg = styled.img`
   @media ${devices.devices.mobile} {
     height: 170px;
     width: 170px;
-    margin: 0px 0px 80px 0px;
+    margin: -30px 0px 60px 0px;
   }
 `;
 
@@ -84,5 +84,9 @@ export const StyledLine = styled.div`
   margin: 20px 0px 20px 0px;
   @media ${devices.devices.tablet} {
     width: 100%;
+  }
+
+  @media ${devices.devices.mobile} {
+    margin: 0px 0px 10px 0px;
   }
 `;
