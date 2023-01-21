@@ -1,4 +1,4 @@
-# LIVE: [space-tourism-challange.netlify.app](space-tourism-challange.netlify.app)
+# LIVE: [https://space-tourism-challange.netlify.app/](https://space-tourism-challange.netlify.app/)
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
